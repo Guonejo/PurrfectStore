@@ -1,0 +1,19 @@
+
+
+
+.imagenes {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenes div{
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(168, 168, 248);
+    padding: 20px;
+    width: 200px;
+    margin: auto;
+}
+

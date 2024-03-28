@@ -10,10 +10,11 @@
 <body>
     <header>
          <!--aqui la navbar  -->
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <!-- px-3 y mb-3 son clases que agregan padding y margin respectivamente -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" style="border-radius: 50%;" >
+                    <img src="logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center" style="border-radius: 50%;" >
                     PurrfectStore
                   </a>
               
@@ -21,7 +22,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav text-uppercase ms-auto mb-2 mb-lg-0 pe-3">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
@@ -42,11 +43,24 @@
                   <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                   </li>
+                  <!-- ps-5 y pe-3 son clases que dan margenes a la derecha -->
+                  <li class="nav-item ps-5 d-flex align-items-center m-0"> 
+                    <div class="user-items m-0">
+                      <ul class="d-flex justify-content-end list-unstyled m-0 ">
+                        <li class="pe-3">
+                          <a href="index.html"><img src="account.png" alt="Mi-cuenta" width="20" height="20"></a>
+                        </li>
+                        <li>
+                          <a href="index.html"><img src="carrito.png" alt="Mi-cuenta" width="20" height="20"></a>
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+                  </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                
               </div>
             </div>
           </nav>
@@ -85,18 +99,30 @@
 
 
     <!-- estos son responsivos porque son de boostrap pero no se como ponerles un ancho fijo -->
-    <div class="container text-justified">
-      <div class="row justify-content-between">
-        <div class="col-sm-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, quas.</div>
-        <div class="col-sm-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, maiores.</div>
-        <div class="col-sm-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, maiores.</div>
-        <div class="col-sm-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, maiores.</div>
+  <section class="textos">
+    <div class="container">
+      <div class="row justify-content-between titulo-h3">
+        <div class="col-sm-2">
+          <h3>Envío a todo Chile</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, quas.</p></div>
+        <div class="col-sm-2">
+          <h3>Calidad Garantizada</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, maiores.</p></div>
+        <div class="col-sm-2">
+          <h3>Pago seguro</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, quas.</p></div>
+        <div class="col-sm-2"><h3>
+          Eco-Friendly</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, quas.</p></div>
       </div>
-  </div>
+    </div>
+  </section>
 
   <section class="imagenes">
+    <h2>Productos</h2><br>
     <div class="row">
-      <div class="col-sm-6 mb-3 mb-sm-0">
+      
+      <div class="col-6 col-md-3 mb-3 mb-md-0">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
@@ -105,7 +131,25 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-6 col-md-3 mb-3 mb-md-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-3 mb-md-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
@@ -115,41 +159,15 @@
         </div>
       </div>
     </div>
-      <!-- aca las imagenes de productos -->
-      <!--<div class="card" style="width: 18rem;">
-          <img src="https://dojiw2m9tvv09.cloudfront.net/11787/product/ninaottossonpuzzlemelonmadnessnivel2jugueteparagatos6073.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        -->
-    </section>
+  </section>
+  
+  
+  <section>
+    <div>
+      
+    </div>
+  </section>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

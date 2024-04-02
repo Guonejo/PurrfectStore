@@ -15,6 +15,16 @@ body {
     
 }
 
+h3{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
 p{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -52,10 +62,24 @@ p{
 }
 
 .imagenes{
-    padding: 0px 50px;
+    padding: 50px 50px;
 }
 
 .imagenes h2{
     text-transform: uppercase;
     font-size: 25px;
+}
+
+.texto2{
+    padding: 100px;
+    text-align: justify;
+}
+
+
+.card-hover {
+    transition: box-shadow 0.3s; /* Añade una transición suave para el efecto */
+  }
+  
+.card-hover:hover {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añade una sombra al pasar el mouse sobre la tarjeta */
 }

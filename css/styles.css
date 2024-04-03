@@ -14,6 +14,10 @@ body {
     white-space: nowrap;
     
 }
+h2{
+    font-size: 18px;
+    text-transform: uppercase;
+}
 
 h3{
     font-size: 18px;

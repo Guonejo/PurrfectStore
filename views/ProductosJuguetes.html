@@ -37,11 +37,11 @@
                  Productos
                </a>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <li><a class="dropdown-item" href="#">Aseo e Higiene</a></li>
-                 <li><a class="dropdown-item" href="#">Camas y Casas</a></li>
-                 <li><a class="dropdown-item" href="#">Juguetes</a></li>
-                 <li><a class="dropdown-item" href="#">Ropa y accesorios</a></li>
-                 <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="../views\ProductosAseo.html">Aseo e Higiene</a></li>
+               <li><a class="dropdown-item" href="../views\ProductosCamas.html">Camas y Casas</a></li>
+               <li><a class="dropdown-item" href="../views\ProductosJuguetes.html">Juguetes</a></li>
+               <li><a class="dropdown-item" href="../views\ProductosRopa.html">Ropa y accesorios</a></li>
+               <li><hr class="dropdown-divider"></li>
                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                </ul>
              </li>
@@ -77,15 +77,15 @@
     
     <!-- Productos Aseo -->
     <section class="imagenes bg-body-secondary">
-      <h2>Aseo e Higiene</h2><br>
+      <h2>Juguetes para Gato</h2><br>
       <div class="row">
         
         <div class="col-6 col-md-3 mb-3 mb-md-0">
           <div class="card card-hover">
             <img src="../img/arenero.jpg" class="card-img-top" alt="arenero">
             <div class="card-body">
-              <h5 class="card-title">Arena para gatos</h5>
-              <p class="card-text"> Arena natural, absorbente y de baja generación de polvo. Controla los olores y es suave para las patas de tu gato. Ideal para todas las edades. ¡Comodidad y limpieza para tu gato!</p>
+              <h5 class="card-title">Bola de Catnip</h5>
+              <p class="card-text">Una bola llena de catnip para estimular y entretener a tu gato. ¡Diversión garantizada para tu mascota!</p>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Comprar
               </button>
@@ -95,7 +95,7 @@
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Arena para Gatos</h5>
+                      <h5 class="modal-title" id="exampleModalLabel">Bola de Catnip</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -115,9 +115,30 @@
           <div class="card card-hover">
             <img src="../img/cama.jpg" class="card-img-top" alt="cama">
             <div class="card-body">
-              <h5 class="card-title">Camas y Casas</h5>
-              <p class="card-text">Brinda a tu gato el lugar perfecto para descansar y relajarse con nuestras acogedoras camas y casas diseñadas para el máximo confort.</p>
-              <a href="#" class="btn btn-primary">Ir Camas y Casas</a>
+              <h5 class="card-title">Juguete Pato</h5>
+              <p class="card-text">Un juguete divertido y duradero con forma de pato. Ideal para el juego interactivo y para mantener a tu gato entretenido. ¡Diversión garantizada para tu mascota!</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Juguete Pato</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Producto añadido con exito.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -125,9 +146,30 @@
           <div class="card card-hover">
             <img src="../img\juguete.webp" class="card-img-top" alt="juguete">
             <div class="card-body">            
-              <h5 class="card-title">Juguetes</h5>
-              <p class="card-text">Explora nuestra colección de juguetes para gatos, creados para inspirar la curiosidad y mantener activo a tu felino amigo.</p>
-              <a href="#" class="btn btn-primary">Ir a Juguetes</a>
+              <h5 class="card-title">Centro de Masajes para Gatos</h5>
+              <p class="card-text">Un juguete innovador que proporciona masajes relajantes a tu gato mientras juega. ¡El regalo perfecto para el bienestar de tu mascota!</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Centro de Masajes para Gatos</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Producto añadido con exito.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -135,9 +177,30 @@
           <div class="card card-hover">
             <img src="../img\ropa.avif" class="card-img-top" alt="ropa">
             <div class="card-body">
-              <h5 class="card-title">Ropa y Accesorios</h5>
-              <p class="card-text">Desde elegantes collares hasta divertidos sombreros, encuentra el toque final perfecto para el look de tu gato en nuestra colección de ropa y accesorios.</p>
-              <a href="#" class="btn btn-primary">Ir a Ropa y Accesorios</a>
+              <h5 class="card-title">Peluche de Palta con Catnip</h5>
+              <p class="card-text">Un juguete suave y divertido con forma de palta, relleno de catnip para estimular y entretener a tu gato. ¡Diversión y relajación en un solo juguete para tu mascota!</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Peluche de Palta con Catnip</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Producto añadido con exito.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -155,10 +218,10 @@
           <div class="col-6 col-md-2 mb-3">
             <h5>Productos</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Aseo e Higiene</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Camas y Casas</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Juguetes</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ropa y Accesorios</a></li>
+              <li class="nav-item mb-2"><a href="../views\ProductosAseo.html" class="nav-link p-0 text-body-secondary">Aseo e Higiene</a></li>
+              <li class="nav-item mb-2"><a href="../views\ProductosCamas.html" class="nav-link p-0 text-body-secondary">Camas y Casas</a></li>
+              <li class="nav-item mb-2"><a href="../views\ProductosJuguetes.html" class="nav-link p-0 text-body-secondary">Juguetes</a></li>
+              <li class="nav-item mb-2"><a href="../views/ProductosRopa.html" class="nav-link p-0 text-body-secondary">Ropa y Accesorios</a></li>
               
             </ul>
           </div>
@@ -242,4 +305,3 @@
 
 </body>
 </html>
-

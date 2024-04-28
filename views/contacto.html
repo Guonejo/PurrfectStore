@@ -77,23 +77,29 @@
           <div id="contactpage" class="row">
             <div id="contactpage_email" class="field form-group col-md-4">
               <label for="email" class="required control-label">E-mail <em>*</em></label><br>
-              <input class="text form-control" required="required" autocomplete="email" type="email" placeholder="nombre@ejemplo.com">
+              <input class="text form-control" required="required" autocomplete="email" type="email" placeholder="nombre@ejemplo.com" id="email">
+              <span id="mensajeCorreo"></span>
+
             </div> 
             <div id="contactpage_name" class="field form-group col-md-4">
-              <label for="contactpage_name" class="required control-label">Nombre <em>*</em></label><br>
+              <label for="contact_name" class="required control-label">Nombre <em>*</em></label><br>
               <input class="text form-control" required="required" autocomplete="name" type="text" name="contact[name]" id="contact_name">
+              <span id="mensajeNombre"></span>
+
             </div>
             <div id="contactpage_phone" class="field form-group col-md-4">
-              <label for="contactpage_phone" class="control-label">Teléfono</label><br>
+              <label for="contact_phone" class="control-label">Teléfono</label><br>
               <input class="text form-control" autocomplete="tel" type="tel" name="contact[phone]" id="contact_phone">
             </div>
             <div id="contactpage_message" class="form-group col-12">
-              <label for="contactpage_message" class="required">Mensaje <em>*</em></label><br>
+              <label for="contact_message" class="required">Mensaje <em>*</em></label><br>
               <textarea class="text form-control" style="height:10em;" required="required" name="contact[message]" id="contact_message"></textarea>
+              <span id="mensajeMensaje"></span>
+
             </div>
             <p class="required col-12">* Campos obligatorios</p>
             <div style="text-align:right;" class="actions col-12">
-              <input type="submit" name="commit" value="Enviar" id="submit_contact" class="button btn btn-primary mb-2 w-100" data-disable-with="Enviar">
+              <input type="submit" name="commit" value="Enviar" id="submit_contact" class="button btn btn-primary mb-2 w-100" data-disable-with="Enviar" onclick="validar()">
             </div>
           </div>
         </div>
@@ -206,8 +212,8 @@
           </ul>
         </div>    
   </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>

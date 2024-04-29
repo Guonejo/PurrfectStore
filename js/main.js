@@ -2,14 +2,26 @@ function validar(){
     
     var correo = document.getElementById("email").value;
     var nombre = document.getElementById("contact_name").value;
+    var telefono = document.getElementById("contact_phone").value;
     var mensaje = document.getElementById("contact_message").value;
 
 
-    if (correo === ""){
-        document.getElementById("mensajeCorreo").textContent = "Debe ingresar un correo ";
+    var validacEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var validacCelular = /^\d{9}$/;
+
+
+    if (correo === "" || validacEmail.test(correo)==false){
+        document.getElementById("mensajeCorreo").textContent = "Debe ingresar un correo válido";
 
     }else{
         document.getElementById("mensajeCorreo").textContent = "";
+    }
+
+    if(telefono===""){
+        document.getElementById("mensajeTelefono").textContent = "";
+    }
+    else if (validacCelular.test(telefono)==false) {
+        document.getElementById("mensajeTelefono").textContent = "Debe ingresar un teléfono válido";
     }
     if (nombre === "" ){
         document.getElementById("mensajeNombre").textContent = "Debe ingresar un nombre ";
@@ -37,3 +49,14 @@ function calcularSubTotal(){
 
     document.getElementById("subtotal").textContent=precioProducto*cantidadProducto;
 }
+//Jquery
+$(document).ready(function(){
+    $("#fila-productos").hide();
+    // accion para el boton que cuando se haga click este muestre la siguiente fila de productos  
+    $("#btn-ver-mas").click(function(){
+        $("#fila-productos").show();
+        $("#btn-ver-mas").hide();
+    })
+   
+})
+

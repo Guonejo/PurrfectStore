@@ -91,6 +91,6 @@ p{
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añade una sombra al pasar el mouse sobre la tarjeta */
 }
 
-#mensajeCorreo, #mensajeNombre, #mensajeMensaje {
+#mensajeCorreo, #mensajeNombre, #mensajeMensaje, #mensajeTelefono {
     color: red;
 }

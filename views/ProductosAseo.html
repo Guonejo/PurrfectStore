@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css\styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>PurrfectStore</title>
@@ -57,7 +57,9 @@
                      <a href="../index.html"><img src="../img\account.png" alt="Mi-cuenta" width="20" height="20"></a>
                    </li>
                    <li>
-                     <a href="../views\carrito.html"><img src="../img\carrito.png" alt="Carrito" width="20" height="20"></a>
+                    <a href="../views/carrito.html">
+                      <img src="../img/carrito.png" alt="Carrito" width="20" height="20"><span id="items-carrito" class="badge rounded-pill text-bg-danger">0</span>
+                    </a>
                    </li>
 
                  </ul>
@@ -82,9 +84,9 @@
           <div class="card card-hover h-100">
             <img src="../img/america-litter-ultra-odor-seal-extreme-.jpg" class="card-img-top" alt="arenero">
             <div class="card-body d-flex flex-column ">
-              <h5 class="card-title">Arena para Gatos</h5>
+              <h5 class="card-title nombre-producto">Arena para Gatos</h5>
               <p class="card-text"> Arena natural, absorbente y de baja generación de polvo. Controla los olores y es suave para las patas de tu gato. Ideal para todas las edades. </p>
-              <h5 class="precios">$14.490</h5>
+              <h5 class="precio">$14.490</h5>
               <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Comprar
               </button>
@@ -101,8 +103,8 @@
                       Producto añadido con éxito.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
-                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                      <button type="button" class="btn btn-secondary btn-add-cart" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary btn-add-cart">Ir a Pagar</a>
                     </div>
                   </div>
                 </div>
@@ -115,9 +117,9 @@
           <div class="card card-hover h-100">
             <img src="../img/bioline-shampoo-para-gatos-multicolores.jpg" class="card-img-top" alt="shampoo">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Shampoo para Gatos</h5>
+              <h5 class="card-title nombre-producto">Shampoo para Gatos</h5>
               <p class="card-text">Un shampoo suave y nutritivo, diseñado para cuidar el pelaje de tu gato. Elimina la suciedad y los olores, dejando un pelaje brillante y saludable.</p>
-              <h5 class="precios">$3.490</h5>
+              <h5 class="precio">$3.490</h5>
               <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                 Comprar
               </button>
@@ -134,8 +136,8 @@
                       Producto añadido con éxito.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
-                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                      <button type="button" class="btn btn-secondary btn-add-cart" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary btn-add-cart">Ir a Pagar</a>
                     </div>
                   </div>
                 </div>
@@ -148,9 +150,9 @@
           <div class="card card-hover h-100">
             <img src="../img/crema.png" class="card-img-top" alt="crema-cicatrizante">
             <div class="card-body d-flex flex-column">            
-              <h5 class="card-title">Crema Cicatrizante para Gatos</h5>
+              <h5 class="card-title nombre-producto">Crema Cicatrizante para Gatos</h5>
               <p class="card-text">Una crema cicatrizante diseñada para ayudar a tu gato a recuperarse de heridas o rasguños. Promueve la curación rápida y alivia el malestar.</p>
-              <h5 class="precios">$9.990</h5>
+              <h5 class="precio">$9.990</h5>
               <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 Comprar
               </button>
@@ -167,8 +169,8 @@
                       Producto añadido con éxito.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
-                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                      <button type="button" class="btn btn-secondary btn-add-cart" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary btn-add-cart">Ir a Pagar</a>
                     </div>
                   </div>
                 </div>
@@ -181,9 +183,9 @@
           <div class="card card-hover h-100">
             <img src="../img/dentalife-snack-dental-para-gatos.jpg" class="card-img-top" alt="ropa">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Snack de Limpieza Dental</h5>
+              <h5 class="card-title nombre-producto">Snack de Limpieza Dental</h5>
               <p class="card-text">Un snack delicioso y funcional para tu gato. Ayuda a mantener la higiene dental, reduciendo el sarro y el mal aliento.</p>
-              <h5 class="precios">$5.490</h5>
+              <h5 class="precio">$5.490</h5>
               <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                 Comprar
               </button>
@@ -200,8 +202,8 @@
                       Producto añadido con éxito.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
-                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                      <button type="button" class="btn btn-secondary btn-add-cart" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary btn-add-cart">Ir a Pagar</a>
                     </div>
                   </div>
                 </div>
@@ -222,9 +224,9 @@
           <div class="card card-hover h-100">
             <img src="../img/cats-best-original-arena-vegetal.jpg" class="card-img-top" alt="arenero">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Arena para Gatos Vegetal</h5>
+              <h5 class="card-title nombre-producto">Arena para Gatos Vegetal</h5>
               <p class="card-text"> Arena natural, fabricada íntegramente de fibras vegetales sin adición de químicos, lo que la hace 100% biodegradable y compostable.</p>
-              <h5 class="precios">$16.990</h5>
+              <h5 class="precio">$16.990</h5>
               <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                 Comprar
               </button>
@@ -241,8 +243,8 @@
                       Producto añadido con éxito.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
-                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                      <button type="button" class="btn btn-secondary btn-add-cart" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary btn-add-cart">Ir a Pagar</a>
                     </div>
                   </div>
                 </div>
@@ -255,9 +257,9 @@
           <div class="card card-hover h-100">
             <img src="../img/cortaunas-mediano-para-mascotas.jpg" class="card-img-top" alt="cama">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Cortauñas Mediano para Mascotas</h5>
+              <h5 class="card-title nombre-producto">Cortauñas Mediano para Mascotas</h5>
               <p class="card-text">Con su tamaño adecuado y su diseño compacto, podrás recortar las uñas de tu gato con facilidad y precisión. </p>
-              <h5 class="precios">$2.490</h5>
+              <h5 class="precio">$2.490</h5>
               <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal5">
                 Comprar
               </button>
@@ -274,8 +276,8 @@
                       Producto añadido con éxito.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
-                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                      <button type="button" class="btn btn-secondary btn-add-cart" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary btn-add-cart">Ir a Pagar</a>
                     </div>
                   </div>
                 </div>
@@ -288,9 +290,9 @@
           <div class="card card-hover h-100">
             <img src="../img/cortaunas-con-luz-led-y-lima.jpg" class="card-img-top" alt="juguete">
             <div class="card-body d-flex flex-column">            
-              <h5 class="card-title">Cortauñas con Luz LED y Lima</h5>
+              <h5 class="card-title nombre-producto">Cortauñas con Luz LED y Lima</h5>
               <p class="card-text">El Cortauñas Antisalpicadura de Precisión con Luz LED es una herramienta práctica y eficiente para el cuidado de las uñas de tu mascota.</p>
-              <h5 class="precios">$7.490</h5>
+              <h5 class="precio">$7.490</h5>
               <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal6">
                 Comprar
               </button>
@@ -307,8 +309,8 @@
                       Producto añadido con éxito.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
-                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                      <button type="button" class="btn btn-secondary btn-add-cart" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary btn-add-cart">Ir a Pagar</a>
                     </div>
                   </div>
                 </div>
@@ -321,9 +323,9 @@
           <div class="card card-hover h-100">
             <img src="../img/body-post-operatorio-para-gatos.png" class="card-img-top" alt="ropa">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Body Post-Operatorio</h5>
+              <h5 class="card-title nombre-producto">Body Post-Operatorio</h5>
               <p class="card-text"> Al utilizar este body, se previene la aparición de infecciones en zonas sensibles o heridas causadas por el lamido de la propia mascota.</p>
-              <h5 class="precios">$12.490</h5>
+              <h5 class="precio">$12.490</h5>
               <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal7">
                 Comprar
               </button>
@@ -340,8 +342,8 @@
                       Producto añadido con éxito.
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
-                      <a href="../views\carrito.html" class="btn btn-primary">Ir a Pagar</a>
+                      <button type="button" class="btn btn-secondary btn-add-cart" data-bs-dismiss="modal">Seguir comprando</button>
+                      <a href="../views\carrito.html" class="btn btn-primary btn-add-cart">Ir a Pagar</a>
                     </div>
                   </div>
                 </div>
@@ -351,6 +353,7 @@
         </div>
       </div>
     </section>
+
 
 
 

@@ -94,3 +94,27 @@ $(document).ready(function () {
     document.getElementById("subtotal").textContent =
       precioProducto * cantidadProducto;
   }
+
+  fetch("https://api.thecatapi.com/v1/images/search?limit=3")
+  .then(response => response.json())
+  .then(data => {
+      var container1 = document.getElementById("carrusel-gato1");
+      var container2 = document.getElementById("carrusel-gato2");
+      var container3 = document.getElementById("carrusel-gato3");
+  
+      // itera sobre cada imagen y la agrega al contenedor correspondiente
+      data.forEach((image, index) => {
+          var imageUrl = image.url;
+          var imggato = document.createElement("img");
+          imggato.src = imageUrl;
+  
+          // agrega la imagen al contenedor correspondiente segun el indice
+          if (index === 0) {
+              container1.appendChild(imggato);
+          } else if (index === 1) {
+              container2.appendChild(imggato);
+          } else if (index === 2) {
+              container3.appendChild(imggato);
+          }
+      });
+  })

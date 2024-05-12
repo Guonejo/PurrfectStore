@@ -94,3 +94,8 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añade una sombra al pasar el mouse 
 #mensajeCorreo, #mensajeNombre, #mensajeMensaje, #mensajeTelefono {
     color: red;
 }
+
+#imagenes-nosotros img{
+    width: 100%;
+    height: auto;
+}

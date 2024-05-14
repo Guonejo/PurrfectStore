@@ -99,3 +99,5 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añade una sombra al pasar el mouse 
     width: 100%;
     height: auto;
 }
+
+#map { height: 350px; }

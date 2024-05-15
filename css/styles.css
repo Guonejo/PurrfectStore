@@ -100,4 +100,14 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añade una sombra al pasar el mouse 
     height: auto;
 }
 
-#map { height: 350px; }
+gmp-map {
+    height: 90%;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 90%;
+    margin: 0;
+    padding: 0;
+  }
